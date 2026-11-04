@@ -1,0 +1,20 @@
+{
+  "name": "doomfiretest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "del /q dist\\*.*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "devjs": "node dist/index.js",
+    "dev": "npm run build && copy src\\index.html dist\\index.html && npx serve -s dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
