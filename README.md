@@ -1,5 +1,5 @@
 # DoomFireTest
-Custom implementation of doom fire
+Custom implementation of doom fire [link](https://zlal.github.io/DoomFireTest/)
 
 Inspired by [Doom Fire](https://fabiensanglard.net/doom_fire_psx/)
 And [ASCII video player](https://github.com/maxcurzi/tplay)
