@@ -46,8 +46,6 @@ const divDisplayGrid = getElement('divDisplayGrid');
 const btnToggleFire = getElement('btnToggleFire');
 const btnToggleWind = getElement('btnToggleWind');
 function main() {
-    // gridResize();
-    // Resize the grid gets called automatically
     window.addEventListener("resize", gridResize);
     if (btnToggleFire) {
         btnToggleFire.addEventListener('click', toggleFire);
@@ -55,6 +53,7 @@ function main() {
     if (btnToggleWind) {
         btnToggleWind.addEventListener('click', toggleWindDirection);
     }
+    gridResize();
     let timeInMS = SECOND_IN_MS / REFRESH_FPS;
     if (timeInMS < 10) {
         timeInMS = 10; // Minimum interval of 10ms to avoid overwhelming the browser
