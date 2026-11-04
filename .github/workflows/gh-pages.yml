@@ -19,8 +19,8 @@ jobs:
           rm -r -f publish
           mkdir publish
           npm run build
-          cp src\\index.html publish\\index.html
-          cp dist\\*.js publish\\*.js
+          cp src/index.html publish/index.html
+          cp dist/*.js publish/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
