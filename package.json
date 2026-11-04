@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "devjs": "node dist/index.js",
-    "dev": "npm run build && copy src\\index.html dist\\index.html && npx serve -s dist"
+    "dev": "npm run build && copy src\\index.html dist\\index.html && npx serve -s dist",
+    "publish": "rd /s /q publish && md publish && npm run build && copy src\\index.html publish\\index.html && copy dist\\*.js publish\\*.js"
   },
   "keywords": [],
   "author": "",
