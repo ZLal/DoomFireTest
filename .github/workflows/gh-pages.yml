@@ -16,7 +16,7 @@ jobs:
       - name: Publish
         run: |
           npm ci
-          rmdir /s /q publish
+          rm -r -f publish
           mkdir publish
           npm run build
           cp src\\index.html publish\\index.html
