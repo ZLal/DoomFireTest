@@ -55,8 +55,6 @@ const btnToggleFire = getElement<HTMLButtonElement>('btnToggleFire');
 const btnToggleWind = getElement<HTMLButtonElement>('btnToggleWind');
 
 function main(): void {
-    // gridResize();
-    // Resize the grid gets called automatically
     window.addEventListener("resize", gridResize);
     if (btnToggleFire) {
         btnToggleFire.addEventListener('click', toggleFire);
@@ -64,6 +62,8 @@ function main(): void {
     if (btnToggleWind) {
         btnToggleWind.addEventListener('click', toggleWindDirection);
     }
+
+    gridResize();
 
     let timeInMS: number = SECOND_IN_MS / REFRESH_FPS;
     if (timeInMS < 10) {
